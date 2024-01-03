@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App - Upload Question</title>
+  <!-- Add necessary stylesheets -->
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<!-- custom css file link  -->
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+  <h1>Upload Question</h1>
+  <form action="/questions/createQuestion" method="POST">
+    <input type="text" name="question" placeholder="Enter question">
+    <input type="text" name="answers[]" placeholder="Enter answer 1">
+    <input type="text" name="answers[]" placeholder="Enter answer 2">
+    <input type="number" name="correctAnswer" placeholder="Correct answer index">
+    <button type="submit">Submit</button>
+  </form>
+
+  <script src="/public/js/quiz.js"></script>
+</body>
+</html>
